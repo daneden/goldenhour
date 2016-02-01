@@ -11,9 +11,11 @@ html {
   background-color: #fff;
 }
 
-body {
-  -webkit-scroll-snap-type: proximity;
-  -webkit-scroll-snap-points-y: repeat(100%);
+@media (min-width: 800px) {
+  body {
+    -webkit-scroll-snap-type: proximity;
+    -webkit-scroll-snap-points-y: repeat(100%);
+  }
 }
 
 section {
