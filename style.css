@@ -11,6 +11,11 @@ html {
   background-color: #fff;
 }
 
+body {
+  -webkit-scroll-snap-type: proximity;
+  -webkit-scroll-snap-points-y: repeat(100%);
+}
+
 section {
   min-height: 100vh;
   padding: 4rem;
