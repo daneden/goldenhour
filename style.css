@@ -6,12 +6,16 @@
 }
 
 html {
-  font: 112.5%/1.5 "Old Standard TT", "Big Caslon", "Times New Roman", serif;
+  font: 100%/1.5 "Old Standard TT", "Big Caslon", "Times New Roman", serif;
   color: #3D464D;
   background-color: #fff;
 }
 
 @media (min-width: 800px) {
+  html {
+    font-size: 112.5%;
+  }
+
   body {
     -webkit-scroll-snap-type: proximity;
     -webkit-scroll-snap-points-y: repeat(100%);
