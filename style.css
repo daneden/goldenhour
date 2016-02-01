@@ -64,6 +64,20 @@ a {
     color: #EF540D;
   }
 
+.btn {
+  display: inline-block;
+  background-color: #fff;
+  border-radius: 4px;
+  padding: 1rem 2rem;
+  color: #25282B;
+  text-decoration: none;
+}
+
+  .btn:hover {
+    color: #fff;
+    background-color: #EF540D;
+  }
+
 .u-tac {
   text-align: center;
 }
