@@ -20,11 +20,23 @@ section {
   flex-direction: column;
 }
 
+  @media (max-width: 800px) {
+    section {
+      padding: 2rem;
+    }
+  }
+
 h1 {
   font-size: 4rem;
   font-style: italic;
   font-weight: 400;
 }
+
+  @media (max-width: 800px) {
+    h1 {
+      font-size: 2.6666rem;
+    }
+  }
 
 header {
   text-align: center;
