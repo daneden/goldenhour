@@ -23,7 +23,7 @@
     </section>
 
     <section class="u-invert">
-      <img class="imgix-fluid canvas" data-src="https://goldenhour.imgix.net/2016-07-reflection-lake/full.jpg?auto=format&q=65"
+      <img class="imgix-fluid canvas" ix-path="2016-07-reflection-lake/full.jpg" ix-params='{"auto": "format", "q": 65}'
       alt="A photo of Reflection Lake, Mt. Rainier National Park, taken at sunrise on a Sony A6000" />
 
       <header>
@@ -35,7 +35,7 @@
     </section>
 
     <section class="u-invert">
-      <img class="imgix-fluid canvas" data-src="https://goldenhour.imgix.net/2016-04-san-francisco/full.jpg?auto=format&q=65"
+      <img class="imgix-fluid canvas" ix-path="2016-04-san-francisco/full.jpg" ix-params='{"auto": "format", "q": 65}'
       alt="A photo of San Francisco, taken at sunrise on a Sony A6000" />
 
       <header>
@@ -47,7 +47,7 @@
     </section>
 
     <section class="u-invert">
-      <img class="imgix-fluid canvas" data-src="https://goldenhour.imgix.net/2016-02-carnelian-bay/full.jpg?auto=format&q=65"
+      <img class="imgix-fluid canvas" ix-path="2016-02-carnelian-bay/full.jpg" ix-params='{"auto": "format", "q": 65}'
       alt="A photo of Carnelian Bay, taken at sunrise on a Sony A6000" />
 
       <header>
@@ -59,7 +59,7 @@
     </section>
 
     <section class="u-invert">
-      <img class="imgix-fluid canvas" data-src="https://goldenhour.imgix.net/2016-02-tahoe/full.jpg?auto=format&q=65"
+      <img class="imgix-fluid canvas" ix-path="2016-02-tahoe/full.jpg" ix-params='{"auto": "format", "q": 65}'
       alt="A photo of North Lake Tahoe, taken at sunrise on a Sony A6000" />
 
       <header>
@@ -71,7 +71,7 @@
     </section>
 
     <section class="u-invert">
-      <img class="imgix-fluid canvas" data-src="https://goldenhour.imgix.net/2016-01-el-calafate/full.jpg?auto=format&q=65"
+      <img class="imgix-fluid canvas" ix-path="2016-01-el-calafate/full.jpg" ix-params='{"auto": "format", "q": 65}'
       alt="A photo of El Calafate's lake shore, shot at sunset on an iPhone 6s" />
 
       <header>
@@ -83,7 +83,7 @@
     </section>
 
     <section class="u-invert">
-      <img class="imgix-fluid canvas" data-src="https://goldenhour.imgix.net/2016-01-torres-del-paine/full.jpg?auto=format&q=65"
+      <img class="imgix-fluid canvas" ix-path="2016-01-torres-del-paine/full.jpg" ix-params='{"auto": "format", "q": 65}'
       alt="A photo of Torres del Paine's Ascensio Valley, shot at sunrise on a Sony A6000" />
 
       <header>
@@ -95,7 +95,7 @@
     </section>
 
     <section class="u-invert">
-      <img class="imgix-fluid canvas" data-src="https://goldenhour.imgix.net/2015-09-mile-rock/full.jpg?auto=format&q=65"
+      <img class="imgix-fluid canvas" ix-path="2015-09-mile-rock/full.jpg" ix-params='{"auto": "format", "q": 65}'
       alt="A photo of San Francisco's Mile Rock Beach, taken at sunset on a Sony A6000" />
 
       <header>
@@ -107,7 +107,7 @@
     </section>
 
     <section class="u-invert">
-      <img class="imgix-fluid canvas" data-src="https://goldenhour.imgix.net/2015-09-lands-end/full.jpg?auto=format&q=65"
+      <img class="imgix-fluid canvas" ix-path="2015-09-lands-end/full.jpg" ix-params='{"auto": "format", "q": 65}'
       alt="A photo of San Francisco's Land's End, taken at sunset on a Sony A6000" />
 
       <header>
@@ -119,7 +119,7 @@
     </section>
 
     <section class="u-invert">
-      <img class="imgix-fluid canvas" data-src="https://goldenhour.imgix.net/2015-09-fallen-leaf-lake/full.jpg?auto=format&q=65"
+      <img class="imgix-fluid canvas" ix-path="2015-09-fallen-leaf-lake/full.jpg" ix-params='{"auto": "format", "q": 65}'
       alt="A photo of Tahoe's Fallen Leaf Lake, taken at sunrise on a Sony A6000" />
 
       <header>
@@ -131,7 +131,7 @@
     </section>
 
     <section class="u-invert">
-      <img class="imgix-fluid canvas" data-src="https://goldenhour.imgix.net/2015-08-oakland/full.jpg?auto=format&q=65"
+      <img class="imgix-fluid canvas" ix-path="2015-08-oakland/full.jpg" ix-params='{"auto": "format", "q": 65}'
       alt="A photo of Oakland's Lake Merritt, taken at sunset on a Sony A6000" />
 
       <header>
@@ -143,7 +143,7 @@
     </section>
 
     <section class="u-invert">
-      <img class="imgix-fluid canvas" data-src="https://goldenhour.imgix.net/2015-08-dogpatch/full.jpg?auto=format&q=65"
+      <img class="imgix-fluid canvas" ix-path="2015-08-dogpatch/full.jpg" ix-params='{"auto": "format", "q": 65}'
       alt="A photo of San Francisco's Central Basin in the Dogpatch, taken at sunset on a Sony A6000" />
 
       <header>
@@ -171,13 +171,7 @@
     <script src="js/imgix.min.js"></script>
     <script>
       // Initialise Imgix
-      imgix.onready(function() {
-        imgix.fluid({
-          updateOnResizeDown: true,
-              pixelStep: 5,
-              autoInsertCSSBestPractices: true
-        });
-      });
+      imgix.config.host = 'goldenhour.imgix.net';
     </script>
   </body>
 </html>
